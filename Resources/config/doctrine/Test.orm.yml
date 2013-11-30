@@ -1,0 +1,16 @@
+MtC\NT2labBundle\Entity\Test:
+    type: entity
+    table: test
+    repositoryClass: MtC\NT2labBundle\Entity\TestRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        category:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

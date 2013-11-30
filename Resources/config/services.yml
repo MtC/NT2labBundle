@@ -1,0 +1,7 @@
+parameters:
+#    mt_cnt2lab.example.class: MtC\NT2labBundle\Example
+
+services:
+#    mt_cnt2lab.example:
+#        class: %mt_cnt2lab.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

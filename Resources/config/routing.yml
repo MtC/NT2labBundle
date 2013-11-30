@@ -1,0 +1,10 @@
+mtc_nt2lab_default:
+    pattern:  /{_locale}/
+    defaults: { _controller: MtCNT2labBundle:Default:index, route : index, _locale: nl }
+    requirements:
+        _locale: nl|en|fr|de
+mtc_nt2lab_default_:
+    pattern: /{_locale}/{route}
+    defaults: { _controller: MtCNT2labBundle:Default:index, route : index, _locale: nl }
+    requirements:
+        _locale: nl|en|fr|de

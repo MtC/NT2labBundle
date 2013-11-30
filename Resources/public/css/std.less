@@ -1,0 +1,139 @@
+#std {
+    .border-radius(@radius: 1em) {
+        border-radius			: @arguments;
+        -webkit-border-radius   : @arguments;
+        -moz-border-radius		: @arguments;
+    }
+
+	.user-select(@arr) {
+        -webkit-user-select		: @arr;
+		-khtml-user-select		: @arr;
+		-moz-user-select		: @arr;
+		-o-user-select			: @arr;
+		user-select				: @arr;
+	}
+
+	.box-sizing(@arguments) {
+		-moz-box-sizing:		@arguments;
+		-webkit-box-sizing:		@arguments;
+		-ms-box-sizing:			@arguments;
+		-o-box-sizing:			@arguments;
+		-khtml-box-sizing:		@arguments;
+		box-sizing:             @arguments;
+	}
+	
+	.box-shadow(/*@x: 0, @y: 0, @blur: 1px, @color: #000*/@arguments) {
+		box-shadow				: @arguments;
+		-moz-box-shadow			: @arguments;
+		-webkit-box-shadow		: @arguments;
+	}
+	
+	.display(@arguments) {
+		display					: @arguments;
+		display					: -moz-@arguments;
+		display					: -webkit-@arguments;
+		display					: -ms-@arguments;
+		display					: -o-@arguments;
+		display					: -khtml-@arguments;
+	}
+	
+	.translate(@x:0,@y:0) {
+		transform				: translate(@arguments);
+		-ms-transform			: translate(@arguments); 
+		-webkit-transform		: translate(@arguments);
+		-o-transform			: translate(@arguments);
+		-moz-transform			: translate(@arguments);
+	}
+	
+	.transform(@arguments) {
+		transform				: @arguments;
+		-ms-transform			: @arguments;
+		-webkit-transform		: @arguments;
+		-o-transform			: @arguments;
+		-moz-transform			: @arguments;
+	}
+	
+	.transition(@arguments) {
+		-webkit-transition: @arguments;
+		-moz-transition: @arguments;
+		-o-transition: @arguments;
+		transition: @arguments;
+	}
+	
+	.linear-gradient4(@safety, @direction: top, @p1: orange, @p2: red, @p3: red, @p4: orange) {
+		background:				@safety;
+		background:				-webkit-linear-gradient(@direction, @p1, @p2, @p3, @p4);
+		background: 			-moz-linear-gradient(@direction, @p1, @p2, @p3, @p4);
+		background: 			-ms-linear-gradient(@direction, @p1, @p2, @p3, @p4);
+		background: 			-o-linear-gradient(@direction, @p1, @p2, @p3, @p4);
+	}
+        
+	.display-flex() {
+		display: -webkit-box;      
+		display: -moz-box;         
+		display: -ms-flexbox;      
+		display: -webkit-flex;
+		display: flex;
+	}
+    
+    .display(@arguments) {
+        display: @arguments;      
+    }
+        
+        .flex(@arguments) {
+            //-webkit-box-flex:           @arguments;
+            -moz-box-flex:              @arguments;
+            -webkit-flex:               @arguments;
+            -ms-flex:                   @arguments;
+            flex:                       @arguments;
+        }
+        
+        .flex-order(@arguments) {
+            -webkit-box-ordinal-group:  @arguments;
+            -moz-box-ordinal-group:     @arguments;
+            -ms-flex-order:             @arguments;
+            -webkit-order:              @arguments;
+            order:                      @arguments
+        }
+        
+        .flex-align(@arguments) {
+            -webkit-flex-align: @arguments;
+            -ms-flex-align: @arguments;
+            -webkit-align-items: @arguments;
+            align-items: @arguments;
+        }
+        
+        .flex-direction(@direction) {
+            -ms-flex-direction:         @direction;
+            -webkit-flex-direction:     @direction;
+            flex-direction:             @direction;
+        }
+        
+        .flex-direction-column() {
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            -ms-flex-direction:         column;
+            -webkit-flex-direction:     column;
+            flex-direction:             column;
+        }
+        
+        .arrow-down(@size, @color) {
+            width: 0; 
+            height: 0; 
+            border-left: @size solid transparent;
+            border-right: @size solid transparent;
+            border-top: (@size * 1.732) solid @color;
+            font-size: 0;
+            line-height: 0;
+        }
+		
+		.arrow-up(@size, @color) {
+            width: 0; 
+            height: 0; 
+            border-left: @size solid transparent;
+            border-right: @size solid transparent;
+            border-bottom: (@size * 1.732) solid @color;
+            font-size: 0;
+            line-height: 0;
+        }
+}
